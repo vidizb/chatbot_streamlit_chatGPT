@@ -10,7 +10,7 @@ st.set_page_config(
 )
 
 # Cara memangil API dan Konfigurasi
-openai.api_key = st.secrets["model"]
+openai.api_key = st.secrets["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"]
 
 def generate_response(prompt):
 	completions = openai.Completion.create(
