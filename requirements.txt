@@ -4,3 +4,4 @@ requests
 openai
 pyChatGPT 
 selenium
+revChatGPT
