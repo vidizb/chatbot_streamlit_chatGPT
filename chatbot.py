@@ -37,7 +37,7 @@ if 'past' not in st.session_state:
 
 # Input Penguna 
 def get_text():
-    input_text = st.text_input("Saya: ","Hello, apa kabar kamu?", key="input")
+    input_text = st.text_input("Saya: ","Assalaamu'alaikum Bot, bisakah saya bertanya?", key="input")
     return input_text 
 
 # Respone Chatbot
