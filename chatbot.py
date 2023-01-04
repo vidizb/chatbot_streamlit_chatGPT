@@ -26,7 +26,7 @@ def generate_response(prompt):
 
 
 # View ( "Tampilan Chatbot")
-st.title("🤖 Chatbot Menggunakan Model ChatGPT👋")
+st.title("Chatbot Menggunakan Model ChatGPT")
 
 # Menyimpan obrolan chatbot
 if 'generated' not in st.session_state:
