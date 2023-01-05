@@ -39,7 +39,7 @@ if 'past' not in st.session_state:
 def get_text():
     input_text = st.text_input("Pertanyaan : ","", key="input")
     return input_text 
-    st.session_state['input'] = ''
+    
 
 # Respone Chatbot
 user_input = get_text()
@@ -49,6 +49,7 @@ if user_input:
     # Menyimpan output
     st.session_state.past.append(user_input)
     st.session_state.generated.append(output)
+    st.session_state["input"] = ""
 
 # Untuk menampilkan riwayat obrolan
 if st.session_state['generated']:
