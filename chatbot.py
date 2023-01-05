@@ -5,7 +5,7 @@ import openai
 from streamlit_chat import message
 
 st.set_page_config(
-    page_title="Chatbot - Demo",
+    page_title="Chatbot JDIH DPRD Batang",
     page_icon="👋"
 )
 
@@ -26,7 +26,7 @@ def generate_response(prompt):
 
 
 # View ( "Tampilan Chatbot")
-st.title("Chatbot Menggunakan Model ChatGPT")
+st.title("Chatbot JDIH DPRD Batang")
 
 # Menyimpan obrolan chatbot
 if 'generated' not in st.session_state:
@@ -37,7 +37,7 @@ if 'past' not in st.session_state:
 
 # Input Penguna 
 def get_text():
-    input_text = st.text_input("Saya: ","Assalaamu'alaikum Bot, bisakah saya bertanya?", key="input")
+    input_text = st.text_input("Pertanyaan : ","", key="input")
     return input_text 
 
 # Respone Chatbot
@@ -48,6 +48,7 @@ if user_input:
     # Menyimpan output
     st.session_state.past.append(user_input)
     st.session_state.generated.append(output)
+    st.session_state["input"] = ""
 
 # Untuk menampilkan riwayat obrolan
 if st.session_state['generated']:
