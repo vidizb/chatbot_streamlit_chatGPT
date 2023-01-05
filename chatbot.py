@@ -48,8 +48,6 @@ if user_input:
     # Menyimpan output
     st.session_state.past.append(user_input)
     st.session_state.generated.append(output)
-    input_text = st.text_input("Pertanyaan : ","", key="input")
-    return input_text 
 
 # Untuk menampilkan riwayat obrolan
 if st.session_state['generated']:
