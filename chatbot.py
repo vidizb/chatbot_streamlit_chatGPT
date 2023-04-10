@@ -27,7 +27,7 @@ def generate_response(prompt):
 
 # View ( "Tampilan Chatbot")
 st.title("Chatbot JDIH DPRD Batang")
-st.info('Disclaimer : Mesin Penjawab Dengan Teknologi ChatGPT dari Open AI. Mohon digunakan dengan bijak sesuai dengan ketentuan dan etika yang berlaku.')
+st.info('Mesin Penjawab Dengan Teknologi ChatGPT dari Open AI. Mohon digunakan dengan bijak sesuai dengan ketentuan dan etika yang berlaku.')
 
 # Menyimpan obrolan chatbot
 if 'generated' not in st.session_state:
