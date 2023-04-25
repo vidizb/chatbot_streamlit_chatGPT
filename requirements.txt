@@ -5,4 +5,3 @@ openai
 pyChatGPT 
 selenium
 revChatGPT
-gTTS
